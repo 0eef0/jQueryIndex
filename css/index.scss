@@ -1,0 +1,94 @@
+$main-color: #faa71a;
+$background: rgb(45,45,45);
+$text-color: white;
+
+@mixin centered(){
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-color: white;
+}
+
+div.navbar{
+    width: 100%;
+    @include centered();
+    background-color: $main-color;
+    color: $text-color;
+
+    table{
+        width: 100%;
+    }
+}
+
+div.content{
+    text-align: center;
+    @include centered();
+    width: 80%;
+    background: $background;
+    padding: 1rem;
+
+    h1{
+        color: greenyellow;
+        font-family: monospace;
+        font-size: 4rem;
+    }
+}
+
+div.detail{
+    @include centered();
+    width: 50%;
+    background-color: white;
+}
+
+/*
+.tabs-panel{
+    min-height: 200px;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style-type: none;
+            display: inline-block;
+            background: $unselected;
+            margin: 0;
+            padding: 3px 10px;
+            border-radius: 10px 10px 0 0;
+            color: $text-color;
+            font-weight: 200;
+            cursor: pointer;
+
+            &:hover{
+                color: $text-color;
+                background: $panel;
+            }
+            &.active{
+                color: $text-color;
+                background: $panel;
+            }
+        }
+    }
+    .panel{
+        display: none;
+        background: $body;
+        padding: 30px;
+        border-radius: 0 0 10px 10px;
+        &.active{
+            display: block;
+        }
+    }
+}
+*/
+
+/*
+.detail{
+    display: none;
+    background-color: white;
+    padding: 0.5rem;
+    &.active{
+        display: block;
+    }
+}
+*/

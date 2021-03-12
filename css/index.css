@@ -1,1 +1,90 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+body {
+  background-color: white;
+}
+
+div.navbar {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #faa71a;
+  color: white;
+}
+
+div.navbar table {
+  width: 100%;
+}
+
+div.content {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background: #2d2d2d;
+  padding: 1rem;
+}
+
+div.content h1 {
+  color: greenyellow;
+  font-family: monospace;
+  font-size: 4rem;
+}
+
+div.detail {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: white;
+}
+
+/*
+.tabs-panel{
+    min-height: 200px;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style-type: none;
+            display: inline-block;
+            background: $unselected;
+            margin: 0;
+            padding: 3px 10px;
+            border-radius: 10px 10px 0 0;
+            color: $text-color;
+            font-weight: 200;
+            cursor: pointer;
+
+            &:hover{
+                color: $text-color;
+                background: $panel;
+            }
+            &.active{
+                color: $text-color;
+                background: $panel;
+            }
+        }
+    }
+    .panel{
+        display: none;
+        background: $body;
+        padding: 30px;
+        border-radius: 0 0 10px 10px;
+        &.active{
+            display: block;
+        }
+    }
+}
+*/
+/*
+.detail{
+    display: none;
+    background-color: white;
+    padding: 0.5rem;
+    &.active{
+        display: block;
+    }
+}
+*/
+/*# sourceMappingURL=index.css.map */
