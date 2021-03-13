@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/icon.png">
     <title>West-MEC Coding!</title>
     <style>
         h1#title, h1#insertion{
@@ -13,20 +14,45 @@
         }
     </style>
 </head>
-<body> <!--onload="$('#insertion').hide()"-->
+<body onload="$('#controls').delay(2500).show(500);"> <!--onload="$('#insertion').hide()"-->
     <div class="navbar">
         <table>
             <tr>
-                <td><img src="images/logo.png" height="50%"></td>
-                <td>Button 1</td>
-                <td>Button 2</td>
-                <td>Button 3</td>
+                <td><img src="images/logo.png" height="120rem"></td>
             </tr>
         </table>
     </div>
     <div class="content">
         <h1 id="title"></h1>
-        <h1 id="insertion">|</h1>
+        <br>
+        <div id="controls">
+            <h2 onclick="writeDesc()">Program Description</h2>
+            <h2 onclick="writePaths()">Career Pathways</h2>
+            <h2 onclick="showVideo()">Videos</h2>
+            <h2 onclick="showLocation()">Locations</h2>
+        </div>
+        <p id="stuff"></p>
+        <div id="videos">
+            <iframe width="30%" height="300rem" src="https://www.youtube.com/embed/73YjPb875tA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="30%" height="300rem" src="https://www.youtube.com/embed/jkZg9XIce3k?list=PLkQKM4aYd5KJca-hROGlZX3z8zjSzcsXI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="30%" height="300rem" src="https://www.youtube.com/embed/Tu5_PCJ5z4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="location">
+            <table style="width: 100%;">
+                <tr>
+                    <td id="centralDetail"></td>
+                    <td>
+                        <img src="images/central.png" height="170rem">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="northeastDetail"></td>
+                    <td>
+                        <img src="images/northeast.png" height="170rem">
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 
     <script src="js/jQuery-3.6.0.js"></script>

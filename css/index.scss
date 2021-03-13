@@ -9,11 +9,12 @@ $text-color: white;
 }
 
 body{
-    background-color: white;
+    background-color: rgb(30,30,30);
 }
 
 div.navbar{
     width: 100%;
+    height: 8rem;
     @include centered();
     background-color: $main-color;
     color: $text-color;
@@ -23,10 +24,19 @@ div.navbar{
     }
 }
 
+div#controls h2{
+    text-decoration: greenyellow 2px underline;
+    display: inline-block;
+    width: 24%;
+    padding: 0;
+    margin: 0;
+}
+
 div.content{
     text-align: center;
     @include centered();
     width: 80%;
+    height: 30rem;
     background: $background;
     padding: 1rem;
 
@@ -35,12 +45,47 @@ div.content{
         font-family: monospace;
         font-size: 4rem;
     }
+    p#stuff{
+        color: greenyellow;
+        font-family: monospace;
+        font-size: 2rem;
+    }
+    h2{
+        color: greenyellow;
+        font-family: monospace;
+    }
+    p{
+        color: greenyellow;
+        font-family: monospace;
+    }
+    table, td, tr{
+        border: greenyellow 2px solid;
+    }
+    table{
+        height: 10rem;
+    }
+    tr{
+        height: 50%;
+    }
+    td{
+        height: 100%;
+        width: 50%;
+    }
 }
 
 div.detail{
     @include centered();
     width: 50%;
     background-color: white;
+}
+div.location{
+    text-align: center;
+    @include centered();
+    width: 100%;
+    table{
+        width: 100%;
+        @include centered();
+    }
 }
 
 /*
